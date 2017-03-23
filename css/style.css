@@ -1,0 +1,567 @@
+.helpwidget {
+    margin: 0px 0 10px 0;
+    padding: 15px;
+    background: #fff;
+    text-align: center;
+}
+
+.widgetheading {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 0 25px 0;
+    text-align: center;
+}
+
+.helpicon {
+    display: inline-block;
+    width: 47%;
+    margin-bottom: 30px;
+    padding-left: 0px;
+}
+
+.helpicon a {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.iconimg {
+    margin-bottom: 5px;
+}
+
+@font-face {
+    font-family: 'et-line';
+    src:url('fonts/et-line.eot');
+    src:url('fonts/et-line.eot?#iefix') format('embedded-opentype'),
+        url('fonts/et-line.woff') format('woff'),
+        url('fonts/et-line.ttf') format('truetype'),
+        url('fonts/et-line.svg#et-line') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+    font-family: 'et-line';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display:inline-block;
+}
+
+.icon-mobile, .icon-laptop, .icon-desktop, .icon-tablet, .icon-phone, .icon-document, .icon-documents, .icon-search, .icon-clipboard, .icon-newspaper, .icon-notebook, .icon-book-open, .icon-browser, .icon-calendar, .icon-presentation, .icon-picture, .icon-pictures, .icon-video, .icon-camera, .icon-printer, .icon-toolbox, .icon-briefcase, .icon-wallet, .icon-gift, .icon-bargraph, .icon-grid, .icon-expand, .icon-focus, .icon-edit, .icon-adjustments, .icon-ribbon, .icon-hourglass, .icon-lock, .icon-megaphone, .icon-shield, .icon-trophy, .icon-flag, .icon-map, .icon-puzzle, .icon-basket, .icon-envelope, .icon-streetsign, .icon-telescope, .icon-gears, .icon-key, .icon-paperclip, .icon-attachment, .icon-pricetags, .icon-lightbulb, .icon-layers, .icon-pencil, .icon-tools, .icon-tools-2, .icon-scissors, .icon-paintbrush, .icon-magnifying-glass, .icon-circle-compass, .icon-linegraph, .icon-mic, .icon-strategy, .icon-beaker, .icon-caution, .icon-recycle, .icon-anchor, .icon-profile-male, .icon-profile-female, .icon-bike, .icon-wine, .icon-hotairballoon, .icon-globe, .icon-genius, .icon-map-pin, .icon-dial, .icon-chat, .icon-heart, .icon-cloud, .icon-upload, .icon-download, .icon-target, .icon-hazardous, .icon-piechart, .icon-speedometer, .icon-global, .icon-compass, .icon-lifesaver, .icon-clock, .icon-aperture, .icon-quote, .icon-scope, .icon-alarmclock, .icon-refresh, .icon-happy, .icon-sad, .icon-facebook, .icon-twitter, .icon-googleplus, .icon-rss, .icon-tumblr, .icon-linkedin, .icon-dribbble {
+    font-family: 'et-line';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display:inline-block;
+}
+.icon-mobile:before {
+    content: "\e000000";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-laptop:before {
+    content: "\e001";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-desktop:before {
+    content: "\e002";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-tablet:before {
+    content: "\e003";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-phone:before {
+    content: "\e004";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-document:before {
+    content: "\e005";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-documents:before {
+    content: "\e006";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-search:before {
+    content: "\e007";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-clipboard:before {
+    content: "\e008";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-newspaper:before {
+    content: "\e009";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-notebook:before {
+    content: "\e00a";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-book-open:before {
+    content: "\e00b";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-browser:before {
+    content: "\e00c";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-calendar:before {
+    content: "\e00d";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-presentation:before {
+    content: "\e00e";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-picture:before {
+    content: "\e00f";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-pictures:before {
+    content: "\e010";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-video:before {
+    content: "\e011";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-camera:before {
+    content: "\e012";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-printer:before {
+    content: "\e013";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-toolbox:before {
+    content: "\e014";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-briefcase:before {
+    content: "\e015";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-wallet:before {
+    content: "\e016";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-gift:before {
+    content: "\e017";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-bargraph:before {
+    content: "\e018";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-grid:before {
+    content: "\e019";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-expand:before {
+    content: "\e01a";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-focus:before {
+    content: "\e01b";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-edit:before {
+    content: "\e01c";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-adjustments:before {
+    content: "\e01d";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-ribbon:before {
+    content: "\e01e";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-hourglass:before {
+    content: "\e01f";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-lock:before {
+    content: "\e020";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-megaphone:before {
+    content: "\e021";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-shield:before {
+    content: "\e022";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-trophy:before {
+    content: "\e023";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-flag:before {
+    content: "\e024";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-map:before {
+    content: "\e025";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-puzzle:before {
+    content: "\e026";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-basket:before {
+    content: "\e027";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-envelope:before {
+    content: "\e028";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-streetsign:before {
+    content: "\e029";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-telescope:before {
+    content: "\e02a";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-gears:before {
+    content: "\e02b";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-key:before {
+    content: "\e02c";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-paperclip:before {
+    content: "\e02d";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-attachment:before {
+    content: "\e02e";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-pricetags:before {
+    content: "\e02f";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-lightbulb:before {
+    content: "\e030";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-layers:before {
+    content: "\e031";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-pencil:before {
+    content: "\e032";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-tools:before {
+    content: "\e033";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-tools-2:before {
+    content: "\e034";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-scissors:before {
+    content: "\e035";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-paintbrush:before {
+    content: "\e036";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-magnifying-glass:before {
+    content: "\e037";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-circle-compass:before {
+    content: "\e038";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-linegraph:before {
+    content: "\e039";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-mic:before {
+    content: "\e03a";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-strategy:before {
+    content: "\e03b";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-beaker:before {
+    content: "\e03c";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-caution:before {
+    content: "\e03d";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-recycle:before {
+    content: "\e03e";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-anchor:before {
+    content: "\e03f";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-profile-male:before {
+    content: "\e040";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-profile-female:before {
+    content: "\e041";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-bike:before {
+    content: "\e042";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-wine:before {
+    content: "\e043";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-hotairballoon:before {
+    content: "\e044";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-globe:before {
+    content: "\e045";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-genius:before {
+    content: "\e046";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-map-pin:before {
+    content: "\e047";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-dial:before {
+    content: "\e048";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-chat:before {
+    content: "\e049";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-heart:before {
+    content: "\e04a";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-cloud:before {
+    content: "\e04b";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-upload:before {
+    content: "\e04c";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-download:before {
+    content: "\e04d";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-target:before {
+    content: "\e04e";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-hazardous:before {
+    content: "\e04f";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-piechart:before {
+    content: "\e050";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-speedometer:before {
+    content: "\e051";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-global:before {
+    content: "\e052";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-compass:before {
+    content: "\e053";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-lifesaver:before {
+    content: "\e054";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-clock:before {
+    content: "\e055";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-aperture:before {
+    content: "\e056";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-quote:before {
+    content: "\e057";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-scope:before {
+    content: "\e058";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-alarmclock:before {
+    content: "\e059";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-refresh:before {
+    content: "\e05a";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-happy:before {
+    content: "\e05b";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-sad:before {
+    content: "\e05c";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-facebook:before {
+    content: "\e05d";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-twitter:before {
+    content: "\e05e";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-googleplus:before {
+    content: "\e05f";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-rss:before {
+    content: "\e060";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-tumblr:before {
+    content: "\e061";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-linkedin:before {
+    content: "\e062";
+    color: #000000;
+    font-size: 32px;
+}
+.icon-dribbble:before {
+    content: "\e063";
+    color: #000000;
+    font-size: 32px;
+}
