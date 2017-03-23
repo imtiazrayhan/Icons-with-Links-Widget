@@ -74,9 +74,6 @@ class icons_with_links_widget extends WP_Widget {
       // Load the options.
       include( IWLW_INCLUDES . 'options.php' );
 
-      // Load the icons
-      include( IWLW_INCLUDES . 'icons.php' );
-
       // Load icons if widget is enabled.
       if ( 1 == $widget_enable ) { ?>
 
@@ -111,7 +108,12 @@ class icons_with_links_widget extends WP_Widget {
              <a href="<?php echo $icon_url_6; ?>" target="_blank"><span class="<?php echo $icon_img_class_6; ?>"></span><br>
                <?php echo $icon_text_6; ?></a>
              </a>
-           </div>
+            </div>
+            <?php if ( 1 == $widget_link ) { ?>
+            <div class = 'widgetlink'>
+             <a href="https://wordpress.org/plugins/icons-with-links-widget/" target="_blank">Get this Widget</a>
+            </div>
+            <?php } ?>
         </div>
 
       <?php

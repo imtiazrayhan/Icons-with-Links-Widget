@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Icons with Links Widget
- * Version: 1.0
+ * Version: 1.1
  * Plugin URI: http://imtiazrayhan.com/
  * Description: Add beautiful icons with links to your sidebar using this widget.
  * Author: Imtiaz Rayhan

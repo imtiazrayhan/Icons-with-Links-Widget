@@ -15,6 +15,9 @@ $widget_enable = $iwlw->getOption( 'enable_iwlw' );
 // This variable stores the widget title set by the user.
 $widget_title = $iwlw->getOption ( 'widget_title' );
 
+// This variable stores the widget link option set by the user.
+$widget_link = $iwlw->getOption( 'widget_link' );
+
 // These variables stores the icon text set by the user.
 $icon_text_1 = $iwlw->getOption( 'first_icon' );
 $icon_text_2 = $iwlw->getOption( 'second_icon' );
