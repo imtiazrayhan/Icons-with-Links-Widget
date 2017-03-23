@@ -28,13 +28,13 @@ class iwlw_plugin {
   public function __construct() {
 
     // Setting up the plugins path.
-    add_action( 'plugins_loaded', array( &$this, 'iwlw_define_paths' ), 1 );
+    add_action( 'plugins_loaded', array( $this, 'iwlw_define_paths' ), 1 );
 
     // Setting up the Options panel.
-    add_action( 'plugins_loaded', array( &$this, 'iwlw_load_panel' ), 2 );
+    add_action( 'plugins_loaded', array( $this, 'iwlw_load_panel' ), 2 );
 
     // Registering the widget.
-    add_action( 'widgets_init', array( &$this, 'iwlw_register_widget' ), 3 );
+    add_action( 'widgets_init', array( $this, 'iwlw_register_widget' ), 3 );
 
   }
 
